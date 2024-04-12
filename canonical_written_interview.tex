@@ -1,0 +1,223 @@
+\documentclass{exam}
+\usepackage{hyperref}
+\begin{document}
+
+\begin{center}
+\fbox{\fbox{\parbox{5.5in}{\centering
+Written interview for Software Engineer - Python and K8s at Canonical.}}}
+\end{center}
+
+\vspace{5mm}
+\makebox[0.75\textwidth]{Name: Boussejra Amir}
+
+\vspace{5mm}
+\makebox[0.75\textwidth]{Reviewer: Varshi Gupta}
+
+\section*{Education}
+
+\begin{questions}
+\question How did you fare in high school mathematics, physical sciences, and computing?
+\\~\\
+I was what people would consider a top student in all sciences related field. 
+In high school I was studying mathematics/physics and biology and would always get what could be called a grade A+ (between 18/20 and 20/20 in french notation).
+
+\question What sort of high school student were you? What would your high school peers remember you for, if we asked them?
+\\~\\
+I was the kind of student that always got top grades, I was still very extrovert and my high school peers would remember me to be the kind of guy 
+that was top of the school and at the same time doing push-ups competitions with my group of friends outside of school.
+
+\question In languages and the arts at high school, what were your strongest subjects and how did you rank in those among your school peers?
+\\~\\
+I have always been very good at languages, both English and Spanish. I was top of the class.
+But my Spanish level lowered quite a bit due to not using it anymore in my everyday life.
+
+
+\question Please outline some high school achievements considered exceptional by peers and staff members.
+\\~\\
+I finished for the baccalauréat (high school end of study exam) top of my high school while being one of the only students that worked all week-ends.
+(My parents had a pub, and I was helping 10 hours per week during the week-end).
+
+\question Which degree and university did you choose, and why?
+\\~\\
+I choose Mathematics and Theoretical physics at first and later on specialized in Applied Mathematics and Computer Science at 
+École des Mines de Saint-Étienne. I always loved science and was very good at them. And while I do more applied things, I do consider
+a good training for life to having done in depth theoretical sciences (Measure Theory, Topology, Formal logic, Quantum physics, Statistical Thermodynamics).
+
+\question What did you enjoy most about your time at university?
+\\~\\
+I was learning much and had time to give tutoring in math and physics as well as doing much sports. I did my 200kgs deadlift during those years !
+
+\question Which university courses did you perform best at? How did you rank in your degree?
+\\~\\
+I always performed best in Math and Physics, always ranking in the top 5.
+
+\question Outside of class, what were your interests and where did you spend your time?
+\\~\\
+My two main interest were music, I did guitar everyday those days and mostly sports in my time-off. 
+I was hitting the gym 5 times a week and was managing our school's gym as a benevolent trainer.
+
+\question What did you achieve at university that you consider exceptional?
+\\~\\
+I consider that being successful at university doing a double master's degree 
+without a supplementary year while managing tutoring students for 8 hours a week and doing part-time (1 day/week work time) freelance work (Epigno on my CV)
+was fairly out of common. 
+\end{questions}
+
+\section*{Career Development}
+
+\begin{questions}
+
+\question Please describe any experience as a professional software engineer, working on commercial products.
+\\~\\
+I will describe my two main experiences without counting internships. At a startup and at a more tradictional company. \\~\\
+Epigno (Startup): My main work topic was implementing a doctor’s schedule optimization program. Work was really interesting, as 
+I needed to take into account many labor law regulations specific to japanese health industry, mixing my knowledge in linear optimization and computer science
+to my PLM giving me concrete indications on what regulations constrain the optimization problem. I loved the fact that my work's goal 
+was to help hospital better manage their resources and automatize shift planning. 
+I think automatizing tedious work is the best use case of applied mathematics and computer science.
+Company was remote first, had a very good culture and the two months I spend in Japan with the team was really one of the best moments of my life (from a human relationship point of view).
+\\~\\
+Viavi Solutions:
+My main work topic was introducing AI into their company. Their main focus is doing fiber testing products, and the goal 
+is the analysis of optical events in an OTDR trace. Everything was to be done there, apart from a few 100 lines python script doing linear regression, nothing was done to introduce ML in their analysis.
+Project was vast and full of freedom because I was the only one with knowledge on what we could do.
+Thus it was structured in 5 steps:
+\begin{itemize}
+\item Creating a DB to evaluate their signal processing algorithms
+\item Creating a Python API to parse their proprietary file format
+\item Prototyping a ML MVP that improved their signal processing algorithms
+\item Standardizing the ML dev environment (Data processing pipelines with Kedro, MLFlow model registry...)
+\item Export the produced models to \href{https://fr.wikipedia.org/wiki/Open_Neural_Network_Exchange}{ONNX} to exploit in a 30 year old C/C++ codebase alongside legacy algorithms.
+\end{itemize}
+Overall, the work was motivating because everything was to be done, but there was a lack of leadership which lead me to be the sole decidor at many times.
+One of the successes was selling a new software license for those ML algorithms which lead to a big business use case with ASML.
+\question Please describe any experience as a software engineer working on internal company projects rather than commercial products.
+\\~\\
+My main experiences on internal company projects would be the following ones:
+\begin{itemize}
+    \item Epigno: Upgrade a codebase’s frontend from Node 8 to 16, backend from Python 3.4 to 3.9
+    \item Epigno: Migrate to \href{https://python-poetry.org/}{Poetry} for python env management
+    \item Viavi: Python parser for proprietary sor file format
+    \item Viavi: Dashboard driven web-app (streamlit) to qualify statistically their signal processing algorithms
+    \item Viavi: Docker environments for C/C++ 30 year old codebase to freeze release build
+\end{itemize}
+
+\question Describe your skill in your preferred development language, and how you attained it.
+\\~\\
+My favorite development language is \href{https://www.rust-lang.org/fr}{Rust} !
+This language was introduced to me when I was 20 year old by my 6 year older big brother who did is computer science thesis using this language.
+Having time, I was able to build theoretical knowledge by reading fully the \href{https://doc.rust-lang.org/book/}{Rust Book} and later on I improved
+by working on the commercial product of the doctor’s shift optimizer at Epigno, developping with a senior engineer recurrent reviews.
+Another point that helped me deepen my understanding of the language was teaching it, developing with a physicist non-programmer friend
+ a \href{https://github.com/Aboussejra/relativistic_ray_tracing}{relativistic ray-tracer}. And lastly, I think continuously keeping up to date 
+ with the \href{https://news.ycombinator.com/news}{Hacker News} Rust related posts helped me improve.
+
+\question What are your strengths as a software engineer?
+\\~\\
+I am a scientist first before being a software engineer, that leads me to be a rigorous person which always advance my points with rigorous and sourced justifications.
+This leads me to be a clean code enthusiast, I love people who want to improve, I will always help those people and never drag them down.
+My motto traduced in english would be "Together to do better than alone".
+Adding to those technical and interpersonal skills I am a continuous learner, science never stops !
+
+\question What experience do you have with Linux system administration? What is the largest group of servers you have helped operate?
+\\~\\
+In terms of Linux system administration, my experience primarily stems from managing
+my personal system and a big virtual machine I used at Viavi for ML computing. 
+While my direct experience might be limited to these environments, I've gained proficiency in tasks such as package management, system monitoring, and basic troubleshooting within a Linux environment.
+
+\question What experience do you have with site reliability engineering, keeping production services online and available?
+\\~\\
+Again my experience is quite limited in this domain,
+The only thing I have contributed to would be  through my role in updating at Epigno the doctor’s schedule optimization microservice. 
+I've gained  some experience in implementing updates and push them to production to improve performance of the microservice.
+\end{questions}
+
+\section*{Experience}
+
+\begin{questions}
+
+\question Describe your level of experience in Python, and how you have attained it.
+\\~\\
+My Python level has been a gradual climb, scaling up with each adventure as I always had at least some Python at all my jobs. I would summarise it this way:
+\begin{itemize}
+    \item 18 years old, not understanding what an interpreted language is and working in a school installed IDE implementing mathy things such as
+differential equation solving, graph coloration
+    \item 21 years old, first internship, discovering backend development, Flask/FastApi, Venv creation, Python dependency management, formatting, linting
+    \item 22 years old, Part-time work. Discovering real backend development, python dependency hell and upgrade hell if not kept up to date regularly. Introduced to more best practices, CI/CD, unit and integration test
+    \item 25 years old, becoming a real Pythonista. Trying to improve the workflow everywhere, pushing linting and static type checking everywhere alongside data validation (Glory to \href{https://docs.pydantic.dev/latest/}{Pydantic}). Encouraging hardware guys who only does some Excel and basic scripting on windows without virtual envs to begin managing virtual environments.
+\end{itemize}
+
+\question When did you start working on Linux? Describe your level of experience as a user \& developer on Linux.
+\\~\\
+I started working on Linux with my first internships. I was a user from my 12 years old 
+using Ubuntu (first DVD was engraved by my older brother), but with a Windows dual-boot at the time to be able to play some video-games 
+(At the time I was not a huge linux tinkerer and playing with Wine was complicated, now I play on SteamOS).
+I always use linux developping or for regular uses (mainly \href{https://pop.system76.com/}{Pop!\_OS} and \href{https://www.debian.org/index.fr.html}{debian})
+\question Describe your experience with container technologies (Docker, LXD, Kubernetes, etc).
+\\~\\
+I never had a full time job managing container like a devops could. But I often did some docker and docker compose (no kubernetes) when need was there.
+Mainly consisting of adding a container microservice in an existing compose orchestration and doing some isolated Dockerfile to yield a reproducible test environment.
+\question How do you prefer to drive documentation for your products?
+\\~\\
+I prefer managing doc as code. I think that when doc is not managed that way it often becomes obsolete fast. 
+That means I like my doc to be under git (like my resume is), in plain text markup. 
+If you need extensive documentation, I like how things are done using tools like \href{https://github.com/rust-lang/mdBook}{mdBook} or \href{https://www.gitbook.com/}{GitBook}
+\question How do you think about quality in your products?
+\\~\\
+I like to have a quality-first approach in software products. 
+For example I try to minimize technical debts by often updating the toolchains and libraries that I am using. I learned the hard way how tough it can be to migrate a library which had 10 years of API changes.
+I think working as a team with a group of excellent technical people and having enough time permits to produce quality products.
+\question Describe a case where it was very difficult to test code you were writing, but you found a reliable way to do it.
+\\~\\
+At Viavi Solutions, I needed to add my ML algorithms to an existing legacy solution after MVP was developped.
+And we had a problem in evaluating measurement algorithms on the OTDR traces. An existing solution was to load sequentially 
+files that were written on a Hard Disk Drive to an embedded product that then run the measurement procedure on each file, 
+and lastly we would read a json report of what was displayed on screen in the results. 
+A big problem was that what we saw displayed could change depending on the config of the embedded product (units like miles/meters, filtering of some files due to client configuration).
+Thus we were obligated to make sure we put the product manually in a good configuration before running tests, and software updates of what was in the report could cause variations of the output parsed.
+For this reason we developed a Python parser for the proprietary files (they do not depend on the config) to ensure consistent input and a new tool to load the files in a product,
+get back measured file and be able to test the measures with a consistent output not depending on the configuration. 
+At the same time work was done to be able to interface it with a x86 build of the minimal measurement app that were on the product and not the full tooling.
+\question What would you like to achieve in career development and skills development?
+\\~\\
+My main goal is to be able to constantly learn, my biggest fear is entering an environment where every day is the same and there is no technological thrill.
+\end{questions}
+
+\section*{Context}
+
+\begin{questions}
+
+\question Are you involved in open source software?
+\\~\\
+Not really, the only contribution I could show would be a regression problem in the rust language I was able to isolate and report.
+\question Describe any significant contributions to open source (with links where possible), if any.
+\\~\\
+The mentioned problem is the following one:
+https://github.com/rust-lang/rust/issues/103141
+\question Why do you most want to work for Canonical?
+\\~\\
+I have been told Canonical is full of excellent engineers and it will permit working on interesting open-source projects. Those are my two main motivations.
+\question Which other companies are building the sort of products you would like to work on?
+\\~\\
+A company I would really like to work with is \href{https://huggingface.co/}{Hugging Face}, they have data engineering tooling that is 
+rusty and build a great ML platform to help developers. The intersection of my favourite language and one of my favorite topics would make this company one I find really interesting.
+\question Which companies have the most interesting approach to devops and site reliability engineering?
+\\~\\
+I do not have much knowledge here I must admit, but I would say Amazon with AWS must be very good at this topic. 
+I think that people at Netflix or other kind of streaming services are probably very good at ensuring good devops and service reliability.
+\question What do you think could raise the bar for site reliability engineering, globally?
+\\~\\
+I think having some penalty when something is not reliable could push people to put reliability as a first-class citizen.
+I think often big deals can be concluded in a good demo and later on the delivered product is not as good but is already sold.
+(Example of some services in public French company like \href{https://www.sncf.com/fr}{SNCF} for example, which is unreliable and buggy as hell).
+\question What do you think Canonical needs to improve in its engineering and products?
+\\~\\
+To be honest, I think talking about what a company needs to improve without having worked in it is a bit of a shallow thinking.
+\question Who do you think are key competitors to Canonical? How do you think Canonical should plan to win that race?
+\\~\\
+I think RedHat and SUSSE are the main competitors to Canonical.
+Once again I would rather not give a shallow thinking on what should Canonical do not knowing the business that is related so I will refrain from answering.
+\end{questions}
+
+
+\end{document}
